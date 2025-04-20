@@ -1,0 +1,35 @@
+<html>
+<body>
+    <h1>Good Morning Sunshine!</h1>
+    
+    <h2>Weather Update:</h2>
+    <p>The average temperature today is: {{ average_temperature }} °C</p>
+    {% if will_rain %}
+        <p>☔ It looks like it is going to rain today. Pack a Rain Jacket</p>
+        <p>
+            <a href="https://open.spotify.com/playlist/37i9dQZF1E4yVfD4M4LwFh?si=af121da8527a41e8">Spotify Playlist</a>>
+        </p>
+    {% else %}
+        <p>☀️ It looks like it is not going to Rain today. Go to the Beach!</p>
+        <p>
+            <a href="https://open.spotify.com/playlist/37i9dQZF1E4kqtg3fOjeAG?si=a9a6262c7cbf4926">Spotify Playlist</a>
+        </p>
+    {% endif %}
+    <h2>Today's Calendar:</h2>
+    <ul>
+        {% for event in calendar %}
+            <li>{{ event }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Here are some good news stories to brighten your day:</h2>
+    <ul>
+        {% for news_item in news %}
+            <li><a href="{{ news_item['link'] }}">{{ news_item['title'] }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Inspirational Quote of the Day:</h2>
+    <p>{{ quote }}</p>
+</body>
+</html>
