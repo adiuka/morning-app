@@ -12,3 +12,6 @@ Potential improvements:
 2. It sends a neat email through SMTP library, but I thought could be cool to integrate WhatsApp aswell, as that is the main communications software I use.
 3. I think I could have more weather options. For now if it does not rain I suggest going to the beach, but these are minor details I wanted to leave for later. The weather API gives back a loooot of data as well, so it could be endlessly cuistomisable. 
 4. I tried a new structure for the project and this exam, but not sure if it is entirely industry correct. Would like to revise it and make it more clean.
+
+Here is a screenshot of the Email Generated:
+![Screen Shot of Working App](test_screenshot.png)
